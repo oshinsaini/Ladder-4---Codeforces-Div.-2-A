@@ -1,0 +1,11 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+ 
+int main() {
+    ll n,m; cin>>n>>m;
+    ll total =min(n,m);
+    if(total%2==0) cout<<"Malvika";
+    else cout<<"Akshat";
+}
