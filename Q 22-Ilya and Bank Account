@@ -9,7 +9,6 @@ int main() {
         ll a=n/10; ll b=n%10; n=n/100; n*=10; b+=n;
         if(a>=b) cout<<a<<endl;
         else cout<<b<<endl;
-        
-    }
+        }
     else if(n>=0) cout<<n;
 }
