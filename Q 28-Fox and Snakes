@@ -1,0 +1,42 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+ 
+int main()
+{
+    ll n,m;
+    cin>>n>>m; int flag=0;
+    for(ll i=1ll; i<n+1; i++)
+    {
+        if(i%2!=0)
+        {
+            for(ll i=0ll; i<m; i++)
+            {
+                cout<<"#";
+            }
+            cout<<endl;
+        }
+        if(i%2==0 && flag==0){
+            for(ll i=0ll; i<m-1; i++)
+            {
+                cout<<".";
+            }
+            cout<<"#"<<endl;
+            flag=1;
+            continue;
+        }
+        if(i%2==0 && flag==1)
+        {
+            cout<<"#";
+            for(ll i=0ll; i<m-1; i++)
+            {
+                cout<<".";
+            }
+            flag=0;
+            cout<<endl;
+            continue;
+        }
+        //cout<<endl;
+    }
+}
