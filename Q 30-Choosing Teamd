@@ -1,0 +1,16 @@
+#include <iostream>
+#define ll long long
+using namespace std;
+ 
+int main() 
+{
+    ll n,k; cin>>n>>k; int cnt=0;
+    ll a[n];
+    for(ll i=0ll; i<n; i++)
+    {
+        cin>>a[i];
+        a[i]+=k;
+        if(a[i]<=5) cnt++;
+    }
+    cout<<cnt/3;
+}
